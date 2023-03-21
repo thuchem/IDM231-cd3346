@@ -1,0 +1,295 @@
+/* font insert */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rammetto+One&family=Righteous&display=swap');
+
+h1 {
+  text-align: center;
+  font-family: 'Rammetto One', cursive;
+  font-size: 100px;
+  line-height: 100px;
+  z-index: 3;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 15px;
+}
+.birthdaycontainer {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+span {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+  color:white;
+}
+
+form {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+}
+ input {
+  font-size: 30px;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: none;
+  padding: 8px 15px;
+   transition: transform 0.3s ease;
+}
+input:hover {
+  transform: scale(1.1);
+}
+
+ button[type="submit"] {
+  display: block;
+  padding: 15px;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  background-color: rgb(11, 37, 84);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 40%;
+  margin: 20px auto;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #1f4fd4;
+  transform: scale(1.1);
+}
+
+
+ #result {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  color:white;
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.container {
+display: grid;
+grid-template-columns: repeat(6, 1fr); /* 3 columns */
+grid-template-rows: repeat(2, auto); /* 4 rows */
+grid-gap: 20px; /* gap between buttons */
+margin: 0 auto;
+width: 500px;
+justify-content: center;
+}
+ .zodiac {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border:solid;
+  border-color:white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(29, 80, 125, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.zodiac:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+ .zodiac:focus {
+  outline: none;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 0 0 2px white;
+}
+
+ .zodiac span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+}
+.aries {
+  background-color: #63b1c5;
+  color: #fff;
+}
+ .taurus {
+  background-color: #8a9ade;
+  color: #fff;
+}
+ .gemini {
+  background-color: #62b5d3;
+  color: #fff;
+}
+ .cancer {
+  background-color: #68c6bf;
+  color: rgb(255, 255, 255);
+}
+ .leo {
+  background-color: #20b3c3;
+  color: rgb(255, 255, 255);
+}
+ .virgo {
+  background-color: #65c9d4;
+  color: #fff;
+}
+ .libra {
+  background-color: #3bbdc2;
+  color: #fff;
+}
+ .scorpio {
+  background-color: #219f9c;
+  color: #fff;
+}
+ .sagittarius {
+  background-color: #1a4d8b;
+  color: #fff;
+}
+ .capricorn {
+  background-color: #336296;
+  color: #fff;
+}
+ .aquarius {
+  background-color: #2f52a4;
+  color: #fff;
+}
+ .pisces {
+  background-color: #214e89;
+  color: #fff;}
+
+  #description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 25px;
+  }
+
+  @keyframes slideinleft {
+    0% {
+      transform: translateX(-100%) rotate(-90deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideinright {
+    0% {
+      transform: translateX(100%) rotate(90deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ 
+#left {
+  position:absolute;
+  left:-200px;
+  z-index: 2;
+  top: 120px;
+  animation-name: slideinleft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease forwards;
+}
+
+#astrologyleft {
+  position:absolute;
+  left:-200px;
+  z-index: 3;
+  top: 120px;
+  animation-name: slideinleft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease forwards;
+}
+
+#right {
+  position:absolute;
+  right:-200px;
+  z-index: 2;
+  top: 120px;
+  animation-name: slideinright;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease forwards;
+}
+
+#astrologyright {
+  position:absolute;
+  right:-200px;
+  z-index: 3;
+  top: 120px;
+  animation-name: slideinright;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease forwards;
+}
+
+.backgroundcolor {
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 31, 184, 0.7); /* 70% opacity white */
+  z-index: 2;
+}
+
+
+button {
+  z-index: 2;
+}
+  .container {
+    position: relative;
+  }
+/* Define the initial position for the zodiac icons */
+.zodiac-icons {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.begin {
+  z-index: 1;
+}

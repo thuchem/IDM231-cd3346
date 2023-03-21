@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Zodiac Finder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="backgroundcolor">
+   <div class="birthdaycontainer">
+     <h1>ZODIAC SIGN FINDER</h1>
+     <form>
+       <label for="birthday">Enter your birthday:</label>
+       <input type="date" id="birthday" name="birthday">
+       <button type="submit">Calculate</button>
+     </form>
+     <div id="result">
+       Your zodiac sign is: <span id="zodiac-sign"></span>
+     </div>
+     <div id="button-list" class="container">
+         <button id="aries" class="zodiac aries" data-sound="sound1">Aries<audio id="sound1" src="audio/aries.mp3"></audio></button>
+         <button id="taurus" class="zodiac taurus" data-sound="sound2">Taurus<audio id="sound2" src="audio/taurus.mp3"></audio></button>
+         <button id="gemini" class="zodiac gemini" data-sound="sound3">Gemini<audio id="sound3" src="audio/gemini.mp3"></audio></button>
+         <button id="cancer" class="zodiac cancer" data-sound="sound4">Cancer<audio id="sound4" src="audio/cancer.mp3"></audio></button>
+         <button id="leo" class="zodiac leo" data-sound="sound5">Leo<audio id="sound5" src="audio/leo.mp3"></audio></button>
+         <button id="virgo" class="zodiac virgo" data-sound="sound6">Virgo<audio id="sound6" src="audio/virgo.mp3"></audio></button>
+         <button id="libra" class="zodiac libra" data-sound="sound7">Libra<audio id="sound7" src="audio/libra.mp3"></audio></button>
+         <button id="scorpio" class="zodiac scorpio" data-sound="sound8">Scorpio<audio id="sound8" src="audio/scorpio.mp3"></audio></button>
+         <button id="sagittarius" class="zodiac sagittarius" data-sound="sound9">Sagittarius<audio id="sound9" src="audio/sagittarius.mp3"></audio></button>
+         <button id="capricorn" class="zodiac capricorn" data-sound="sound10">Capricorn<audio id="sound10" src="audio/capricorn.mp3"></audio></button>
+         <button id="aquarius" class="zodiac aquarius" data-sound="sound11">Aquarius<audio id="sound11" src="audio/aquarius.mp3"></audio></button>
+         <button id="pisces" class="zodiac pisces" data-sound="sound12">Pisces<audio id="sound12" src="audio/pisces.mp3"></audio></button>
+       </div>
+       <p id="description"></p>
+   </div>
+   <div class="zodiac-icons" id="left"></div>
+   <div class="zodiac-icons" id="right"></div>
+<div class="astrology" id="astrologyleft"></div>
+<div class="astrology" id="astrologyright"></div>
+</body>
+<script src="script.js"></script>
+</html>
